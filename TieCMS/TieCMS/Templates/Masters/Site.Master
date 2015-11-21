@@ -1,0 +1,21 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="TieCMS.Templates.Masters.Site" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link type="text/css" rel="stylesheet" href="<%= ResolveUrl("~/Content/bootstrap.min.css") %>" />
+    <script type="text/javascript" src="<%= ResolveUrl("~/Scripts/jquery-1.9.1.min.js") %>"></script>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+    </div>
+    </form>
+     <script type="text/javascript" src="<%= ResolveUrl("~/Scripts/bootstrap.min.js") %>"></script>
+</body>
+</html>
